@@ -1,16 +1,4 @@
-export * from "./generated/api";
-export * from "./generated/types/activityLog";
-export * from "./generated/types/dashboardSummaryTasksByPriority";
-export * from "./generated/types/healthStatus";
-export * from "./generated/types/listActivityParams";
-export * from "./generated/types/listTasksParams";
-export * from "./generated/types/listTasksPriority";
-export * from "./generated/types/listTasksStatus";
-export * from "./generated/types/project";
-export * from "./generated/types/projectDetail";
-export * from "./generated/types/task";
-export * from "./generated/types/taskListResponse";
-export * from "./generated/types/taskPriority";
-export * from "./generated/types/taskStatus";
-export * from "./generated/types/user";
-export * from "./generated/types/userRole";
+// Export generated modules with explicit .js extensions for ESM compatibility
+// Export only the API module which already includes all generated types to avoid duplicate exports
+export * from "./generated/api.js";
+// Removed .ts imports; using .js stubs for ESM compatibility
