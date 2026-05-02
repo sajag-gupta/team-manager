@@ -34,7 +34,8 @@ export default function SignUpPage() {
         return;
       }
 
-        setLocation("/dashboard");
+        // Redirect to dashboard with full page reload to ensure auth state is recognized
+        window.location.href = "/dashboard";
     } finally {
       setIsSubmitting(false);
     }
