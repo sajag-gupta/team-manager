@@ -52,15 +52,6 @@ The repository is configured as an npm workspace, allowing each package (`fronte
 
 ---
 
-## Architecture Diagram
-```mermaid
-graph LR
-    A[Browser (React SPA)] -->|HTTP API| B[Express Server]
-    B -->|MongoDB Driver| C[MongoDB]
-    B -->|Static Assets| D[Built Frontend (dist)]
-    D -->|Served to| A
-```
-
 ---
 
 ## Repository Structure
