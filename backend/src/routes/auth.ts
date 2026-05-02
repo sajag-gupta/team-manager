@@ -2,8 +2,8 @@ import { Router, type Response } from "express";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { User } from "@workspace/db";
-import type { AuthRequest } from "../lib/auth";
-import { requireAuth } from "../lib/auth";
+import type { AuthRequest } from "../lib/auth.js";
+import { requireAuth } from "../lib/auth.js";
 
 const router = Router();
 

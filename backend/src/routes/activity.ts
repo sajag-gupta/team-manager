@@ -1,8 +1,8 @@
 import { Router } from "express";
 import mongoose from "mongoose";
 import { ActivityLog, User, Project } from "@workspace/db";
-import { requireAuth } from "../lib/auth";
-import type { AuthRequest } from "../lib/auth";
+import { requireAuth } from "../lib/auth.js";
+import type { AuthRequest } from "../lib/auth.js";
 
 const router = Router();
 
