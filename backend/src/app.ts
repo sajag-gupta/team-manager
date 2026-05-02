@@ -7,6 +7,7 @@ import cookieParser from "cookie-parser";
 import router from "./routes/index.js";
 import { logger } from "./lib/logger.js";
 import path from "path";
+import { fileURLToPath } from "url";
 
 const app: Express = express();
 
@@ -50,6 +51,9 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/api", router);
 
+// Resolve __dirname in ES module context
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 // Serve static files from the built frontend (production) or Vite dev server (if running)
 const frontendDist = path.resolve(__dirname, "..", "..", "frontend", "dist", "public");
 app.use(express.static(frontendDist));
