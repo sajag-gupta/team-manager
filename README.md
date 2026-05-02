@@ -80,7 +80,7 @@ Team-Task-Manager/
 1. **Clone the repository** (already done).
 2. **Install dependencies**
    ```bash
-   npm ci   # Installs all workspace packages
+   npm install   # Installs all workspace packages
    ```
 3. **Create an `.env` file** at the repository root (copy from `.env.example`). Required variables:
    - `PORT` – Port for the backend (default `3000`).
