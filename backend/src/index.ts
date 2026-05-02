@@ -21,8 +21,8 @@ if (Number.isNaN(port) || port <= 0) {
 
 async function start(): Promise<void> {
   const [{ default: app }, { logger }, { connectDB }] = await Promise.all([
-    import("./app"),
-    import("./lib/logger"),
+    import("./app.js"),
+    import("./lib/logger.js"),
     import("@workspace/db"),
   ]);
 
